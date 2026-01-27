@@ -20,7 +20,6 @@ for (let i=0; i<line*row; i++) {
 for (let j=0; j<selects.length; j++) {
   document. write(`<h1 class='circle' style="background: ${Scolors[j]}; translate: ${shiftX}px -20px" id=${j}>${selects[j]}</h1>`);
 }
-  document.write("<button id='reset' onclick='reset()'>Reset</button>");
 }
 function reset() {
   document.getElementById('reset').remove();
@@ -35,7 +34,6 @@ function reset() {
   set();
 }
 set();
-document.write("<br><button id='reset' onclick='reset()'>Reset</button>");
 window.addEventListener('touchstart', (e) => {
   table = [["H", "H", "O"], ["O", "O"], ["O", "O", "O"], ["H", "H"], ["O", "O", "H", "H"]];
   Ecoordinates.splice(0, Ecoordinates.length);
